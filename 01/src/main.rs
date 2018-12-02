@@ -5,8 +5,7 @@ use std::io::{BufRead, BufReader};
 
 fn read_changes(f: File) -> Vec<i64> {
     let mut changes = Vec::new();
-    let br = BufReader::new(f);
-    for line in br.lines() {
+    for line in BufReader::new(f).lines() {
         let change = line
             .expect("Could not read line")
             .parse()
