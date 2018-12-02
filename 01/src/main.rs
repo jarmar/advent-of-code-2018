@@ -18,12 +18,10 @@ fn read_changes(f: File) -> Vec<i64> {
 fn part2(changes: &Vec<i64>) -> i64 {
     let mut seen: HashSet<i64> = HashSet::new();
     let mut frequency = 0;
-    'outer: loop {
-        for change in changes {
-            frequency += change;
-            if !seen.insert(frequency) {
-                break 'outer;
-            }
+    for change in changes.iter().cycle() {
+        frequency += change;
+        if !seen.insert(frequency) {
+            break;
         }
     }
     frequency
