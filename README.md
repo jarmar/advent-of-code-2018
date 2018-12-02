@@ -1,0 +1,1 @@
+These are my Rust solutions (at least so far) to the problems in [Advent of Code 2018](https://adventofcode.com/2018). I'm a beginner to Rust with experience mostly in Python and C++. If you read the code and have a suggestion for improvement, please feel free to let me know!
