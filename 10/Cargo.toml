@@ -1,0 +1,8 @@
+[package]
+name = "aoc18-10"
+version = "0.1.0"
+authors = ["Jakob Jarmar <jakob@jarmar.se>"]
+
+[dependencies]
+regex = "1"
+lazy_static = "1.2.0"
